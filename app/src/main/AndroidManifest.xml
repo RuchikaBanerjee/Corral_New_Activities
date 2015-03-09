@@ -35,14 +35,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ruchika.corralnewactivities.FrontActivity" />
         </activity>
-        <activity
-            android:name=".Offers"
-            android:label="@string/title_activity_offers"
-            android:parentActivityName=".FrontActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.ruchika.corralnewactivities.FrontActivity" />
-        </activity>
+
         <activity
             android:name=".Logout"
             android:label="@string/title_activity_logout"
@@ -61,7 +54,11 @@
 
         <activity
             android:name=".FoodOrderingApps"
-            android:label="@string/title_activity_food_ordering_apps" >
+            android:label="@string/title_activity_food_ordering_apps"
+            android:parentActivityName=".FrontActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ruchika.corralnewactivities.FrontActivity" />
         </activity>
     </application>
 

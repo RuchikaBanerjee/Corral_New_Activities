@@ -44,7 +44,7 @@ public class NearbyRestaurants extends FragmentActivity {
         startActivity(mapIntent);*/
 
         //String uri = "geo:0,0"+"?q="+x+","+y+"(Current_Location)"+"&z=3";
-        String uri = "geo:0,0"+"?q="+"restaurants"+"(Current_Location)"+"&z=3";
+        String uri = "geo:0,0"+"?q="+"restaurants"+"&z=10";
         //String uri = "geo:0,0"+"?q="+"restaurants"+"&z=10";
         //String uri = "geo:0,0"+"?q=restaurants";
         Intent intent= new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
