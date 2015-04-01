@@ -2,23 +2,18 @@ package com.example.ruchika.corralnewactivities;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
-import android.os.Bundle;
-import android.view.Gravity;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
-import android.widget.TextView;
 
 
 public class FrontActivity extends ActionBarActivity
@@ -39,6 +34,9 @@ public class FrontActivity extends ActionBarActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_front);
+        new GcmRegistrationAsyncTask(this).execute();
+
+
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getSupportFragmentManager().findFragmentById(R.id.navigation_drawer);
@@ -67,6 +65,16 @@ public class FrontActivity extends ActionBarActivity
                 startActivity(foodorderingapps);
                 break;
             case 3:
+                Intent findpartners = new Intent(this, FoodPartners.class);
+                startActivity(findpartners);
+                break;
+            case 4:
+
+                Intent notifications = new Intent(this, TodaysNotifications.class);
+                startActivity(notifications);
+                break;
+
+            case 5:
                 Intent logout = new Intent(this, Logout.class);
                 startActivity(logout);
                 break;
@@ -91,6 +99,11 @@ public class FrontActivity extends ActionBarActivity
                 break;
             case 4:
                 mTitle = getString(R.string.title_section4);
+                break;
+            case 5:
+                mTitle = getString(R.string.title_section5);
+            case 6:
+                mTitle = getString(R.string.title_section6);
                 break;
         }
     }

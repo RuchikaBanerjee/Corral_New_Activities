@@ -5,7 +5,9 @@
     <string name="title_section1">Home</string>
     <string name="title_section2">Nearby Restaurants</string>
     <string name="title_section3">Food Ordering Apps</string>
-    <string name="title_section4">Logout</string>
+    <string name="title_section4">Find Partners</string>
+    <string name="title_section5">Notifications</string>
+    <string name="title_section6">Logout</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
@@ -14,7 +16,9 @@
     <string name="byebyestring">Thanks for using Corral... Have a nice day!!</string>
     <string name="title_activity_offers">Offers</string>
     <string name="title_activity_logout">Logout</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_food_ordering_apps">FoodOrderingApps</string>
+    <string name="title_activity_food_partners">FoodPartners</string>
+    <string name="title_activity_find_partners">FindPartners</string>
+    <string name="title_activity_todays_notifications">TodaysNotifications</string>
 
 </resources>
